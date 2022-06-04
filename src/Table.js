@@ -2,7 +2,7 @@ import React from 'react'
 import {Users} from './users.js'
 
 function Table({data}) {
-    console.log(Users.map(user=>user.address));
+ 
   return (
     <div> <table>
     <tbody>

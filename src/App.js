@@ -11,7 +11,9 @@ function App() {
   
   const filtered=(Users.filter((item)=>
   (
-    item.address.includes(query)
+    item.address.toLocaleLowerCase().includes(query) 
+    ||item.name.toLocaleLowerCase().includes(query) 
+    || item.city.toLocaleLowerCase().includes(query)
   )))
    
   
