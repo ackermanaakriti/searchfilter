@@ -11,12 +11,21 @@ function Table({data}) {
       <th>Address</th>
       <th>work</th>
     </tr>
+    
     {data.map((user)=>
-    (
-      <td>{user.name}</td>
-    ))}
-       
    
+    ( 
+      <tr>
+        <td>{user.name}</td>
+        <td>{user.address}</td>
+        <td>{user.work}</td>
+      </tr>
+   
+
+    )
+    )}
+       
+      
     </tbody>
   </table></div>
   )
