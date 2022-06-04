@@ -10,6 +10,7 @@ function Table({data}) {
       <th>Name</th>
       <th>Address</th>
       <th>work</th>
+      <th>Email</th>
     </tr>
     
     {data.map((user)=>
@@ -19,6 +20,7 @@ function Table({data}) {
         <td>{user.name}</td>
         <td>{user.address}</td>
         <td>{user.work}</td>
+        <td>{user.email}</td>
       </tr>
    
 

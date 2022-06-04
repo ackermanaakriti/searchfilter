@@ -7,13 +7,10 @@ import {Users} from './users.js'
 
 function App() {
   const[query, Setquery]=useState('');
- 
+ const keys=['name', 'address', 'email','work']
   
   const filtered=(Users.filter((item)=>
-  (
-    item.address.toLocaleLowerCase().includes(query) 
-    ||item.name.toLocaleLowerCase().includes(query) 
-    || item.city.toLocaleLowerCase().includes(query)
+  (keys.some(key=>item[key].toLowerCase().includes(query))
   )))
    
   
